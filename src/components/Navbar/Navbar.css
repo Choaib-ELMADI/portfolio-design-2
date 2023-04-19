@@ -1,0 +1,182 @@
+.app__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__navbar a.logo {
+    text-decoration: none;
+    color: var(--white__color);
+    font-size: var(--logo__size);
+    font-family: var(--logo__font-1);
+}
+.app__navbar a.logo span {
+    color: var(--orange__color);
+}
+
+.app__navbar button.open {
+    display: grid;
+    place-items: center;
+    border: 0;
+    outline: none;
+    padding: .25rem;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    background: #333333;
+    color: #dadada;
+    cursor: pointer;
+    transition: .3s;
+}
+.app__navbar button.open:hover {
+    color: var(--orange__color);
+}
+
+.app__navbar .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.app__navbar .overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.app__navbar .app__navbar-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    background: #363636;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: .4s;
+}
+.app__navbar .app__navbar-menu.open {
+    transform: translateX(0);
+}
+
+.app__navbar .app__navbar-menu .close {
+    position: absolute;
+    top: 2rem;
+    right: 4.5rem;
+    color: #dadada;
+    cursor: pointer;
+    transition: .3s;
+}
+.app__navbar .app__navbar-menu .close:hover {
+    color: var(--orange__color);
+}
+
+.app__navbar .app__navbar-menu .menu-items {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app__navbar .app__navbar-menu .menu-items h1 {
+    width: max-content;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--large__font);
+    font-family: var(--logo__font-1);
+    background: var(--black);
+    color: var(--white__color);
+}
+.app__navbar .app__navbar-menu .menu-items h1 span {
+    color: var(--orange__color);
+}
+
+.app__navbar .app__navbar-menu .menu-items .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.app__navbar .app__navbar-menu .menu-items .list li a {
+    text-decoration: none;
+    color: var(--white__color);
+    font-size: 20px;
+    position: relative;
+    transition: .3s;
+}
+.app__navbar .app__navbar-menu .menu-items .list li a:hover {
+    color: var(--orange__color);
+}
+.app__navbar .app__navbar-menu .menu-items .list li a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 80%;
+    width: 100%;
+    height: 1.5px;
+    transition: .2s;
+}
+.app__navbar .app__navbar-menu .menu-items .list li a:hover::after {
+    top: 100%;
+    background: var(--orange__color);
+}
+
+.app__navbar .app__navbar-menu .menu-items p {
+    color: var(--white__color);
+    font-size: var(--small__font);
+}
+
+.app__navbar .app__navbar-menu .menu-items .social {
+    width: max-content;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    transition: .3s;
+}
+.app__navbar .app__navbar-menu .menu-items .social li {
+    opacity: 1;
+    transition: .3s;
+}
+.app__navbar .app__navbar-menu .menu-items .social li:hover {
+    opacity: .4;
+}
+.app__navbar .app__navbar-menu .menu-items .social li a {
+    color: var(--orange__color);
+}
+.app__navbar .app__navbar-menu .menu-items .social:hover > li {
+    opacity: .4;
+}
+.app__navbar .app__navbar-menu .menu-items .social:hover > li:hover {
+    opacity: 1;
+}
+
+.app__navbar .app__navbar-menu .menu-items .order {
+    width: max-content;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid var(--orange__color);
+    color: var(--orange__color);
+    background: transparent;
+    transition: .3s;
+}
+.app__navbar .app__navbar-menu .menu-items .order:hover {
+    color: var(--white__color);
+    background: var(--orange__color);
+}

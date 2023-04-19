@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Marck+Script&display=swap');
 
 :root {
-    --superlarge__font: '100px';
-    --large__font     : '45px';
-    --medium__font    : '16px';
-    --small__font     : '11.25px';
-    --verysmall__font : '8.25px';
+    --superlarge__font: 100px;
+    --large__font     : 45px;
+    --logo__size      : 30px;
+    --medium__font    : 16px;
+    --small__font     : 13.25px;
+    --verysmall__font : 11.25px;
 
     --regular__font   : 'Manrope';
     --second__font    : 'Chivo Mono';
