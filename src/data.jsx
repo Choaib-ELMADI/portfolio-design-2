@@ -43,19 +43,19 @@ export const socials = [
 export const pictures = [
     {
         className: 'image-a',
-        key: 'electronics-a',
+        key: 'electronics-aa',
         alt: 'electronics',
         src: images.electro1,
     },
     {
         className: 'image-b',
-        key: 'electronics-b',
+        key: 'electronics-bb',
         alt: 'electronics',
         src: images.electro2,
     },
     {
         className: 'image-c',
-        key: 'electronics-c',
+        key: 'electronics-cc',
         alt: 'electronics',
         src: images.electro3,
     },
