@@ -68,11 +68,13 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 3px;
     filter: drop-shadow(0 0 10px var(--white__color));
-    opacity: .6;
+    opacity: .8;
     transition: .3s;
 }
 .app__banner .text-content a:hover::before {
-    opacity: 0;
+    border-left-color: var(--orange__color);
+    border-bottom-color: var(--orange__color);
+    filter: drop-shadow(0 0 10px var(--orange__color));
 }
 
 .app__banner .gallery-container .image {

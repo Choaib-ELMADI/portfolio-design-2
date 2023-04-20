@@ -1,4 +1,7 @@
 import { AiFillInstagram, AiFillFacebook, AiFillGithub } from 'react-icons/ai';
+import images from './constants/images';
+
+
 
 export const listItems = [
     {
@@ -34,5 +37,64 @@ export const socials = [
         title: 'github',
         link: 'https://github.com/Choaib-ELMADI/',
         icon: <AiFillGithub size={ 30 } />,
+    },
+];
+
+export const pictures = [
+    {
+        className: 'image-a',
+        key: 'electronics-a',
+        alt: 'electronics',
+        src: images.electro1,
+    },
+    {
+        className: 'image-b',
+        key: 'electronics-b',
+        alt: 'electronics',
+        src: images.electro2,
+    },
+    {
+        className: 'image-c',
+        key: 'electronics-c',
+        alt: 'electronics',
+        src: images.electro3,
+    },
+
+    {
+        className: 'image-1',
+        key: 'coding-a',
+        alt: 'coding',
+        src: images.code3,
+    },
+    {
+        className: 'image-2',
+        key: 'coding-b',
+        alt: 'coding',
+        src: images.code2,
+    },
+    {
+        className: 'image-3',
+        key: 'coding-c',
+        alt: 'coding',
+        src: images.code1,
+    },
+
+    {
+        className: 'image-A',
+        key: '3d-modeling-a',
+        alt: '3d-modeling',
+        src: images.model1,
+    },
+    {
+        className: 'image-D',
+        key: '3d-modeling-d',
+        alt: '3d-modeling',
+        src: images.model4,
+    },
+    {
+        className: 'image-C',
+        key: '3d-modeling-c',
+        alt: '3d-modeling',
+        src: images.model3,
     },
 ];
