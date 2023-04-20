@@ -1,23 +1,27 @@
-import profile from '../assets/profile.jpg';
+import profile    from '../assets/profile.jpg';
+   
+import code1      from '../assets/code/code1.jpg';
+import code2      from '../assets/code/code2.jpg';
+import code3      from '../assets/code/code3.jpg';
 
-import dogs1   from '../assets/dogs/1.jpg';
-import dogs2   from '../assets/dogs/2.jpg';
+import electro1   from '../assets/electro/electro1.jpg';
+import electro2   from '../assets/electro/electro2.jpg';
+import electro3   from '../assets/electro/electro3.jpg';
 
-import kech1   from '../assets/marrakech/1.jpg';
-import kech2   from '../assets/marrakech/2.jpg';
-import kech3   from '../assets/marrakech/3.jpg';
+import model1      from '../assets/model/model1-1.jpg';
+import model2      from '../assets/model/model1-2.jpg';
+import model3      from '../assets/model/model2.jpg';
+import model4      from '../assets/model/model3.jpg';
 
-import water1  from '../assets/water/1.jpg';
-import water2  from '../assets/water/2.jpg';
 
 const images = {
     profile,
 
-    dogs1, dogs2,
+    code1, code2, code3,
 
-    kech1, kech2, kech3,
+    electro1, electro2, electro3,
     
-    water1, water2,
+    model1, model2, model3, model4,
 };
 
 export default images;

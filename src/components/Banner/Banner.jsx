@@ -19,27 +19,36 @@ const Banner = () => {
       <div className="gallery-container">
 
         <div className="image image-a">
-          <img src={ images.kech1 } alt='Marrakech Old Medina' draggable={ false } />
+          <img src={ images.electro1 } alt='Electronics' draggable={ false } />
         </div>
         <div className="image image-b">
-          <img src={ images.kech2 } alt='Marrakech Old Medina' draggable={ false } />
+          <img src={ images.electro2 } alt='Electronics' draggable={ false } />
         </div>
         <div className="image image-c">
-          <img src={ images.kech3 } alt='Marrakech Old Medina' draggable={ false } />
+          <img src={ images.electro3 } alt='Electronics' draggable={ false } />
         </div>
 
-        <div className="image image-d">
-          <img src={ images.dogs1 } alt='Dogs' draggable={ false } />
+        <div className="image image-1">
+          <img src={ images.code3 } alt='Coding' draggable={ false } />
         </div>
-        <div className="image image-e">
-          <img src={ images.dogs2 } alt='Dogs' draggable={ false } />
+        <div className="image image-2">
+          <img src={ images.code2 } alt='Coding' draggable={ false } />
+        </div>
+        <div className="image image-3">
+          <img src={ images.code1 } alt='Coding' draggable={ false } />
         </div>
 
-        <div className="image image-f">
-          <img src={ images.water1 } alt='Water' draggable={ false } />
+        <div className="image image-A">
+          <img src={ images.model1 } alt='3D Modeling' draggable={ false } />
         </div>
-        <div className="image image-g">
-          <img src={ images.water2 } alt='Water' draggable={ false } />
+        <div className="image image-B">
+          <img src={ images.model2 } alt='3D Modeling' draggable={ false } />
+        </div>
+        <div className="image image-C">
+          <img src={ images.model3 } alt='3D Modeling' draggable={ false } />
+        </div>
+        <div className="image image-D">
+          <img src={ images.model4 } alt='3D Modeling' draggable={ false } />
         </div>
 
       </div>

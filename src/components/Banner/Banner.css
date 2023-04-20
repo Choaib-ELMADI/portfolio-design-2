@@ -105,24 +105,45 @@
     transform: translateX(-50%);
 }
 
-.app__banner .gallery-container .image-d {
-    left: 10rem;
-    top: calc(200vh + 6rem);
-    width: 210px;
+.app__banner .gallery-container .image-1 {
+    left: 8rem;
+    top: calc(150vh + 6rem);
+    height: 200px;
+    width: 140px;
 }
-.app__banner .gallery-container .image-e {
-    right: 15rem;
-    top: calc(200vh + 12rem);
+.app__banner .gallery-container .image-2 {
+    right: 8rem;
+    top: calc(200vh + 6rem);
+    width: 140px;
+    height: 220px;
+}
+.app__banner .gallery-container .image-3 {
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
     width: 300px;
+    z-index: 3;
 }
 
-.app__banner .gallery-container .image-f {
-    bottom: 10rem;
-    right: 10rem;
-    height: 250px;
+.app__banner .gallery-container .image-A {
+    left: 4rem;
+    bottom: 35rem;
+    width: 250px;
 }
-.app__banner .gallery-container .image-g {
-    bottom: 10rem;
-    left: 10rem;
+.app__banner .gallery-container .image-B {
+    bottom: 5rem;
+    left: 4rem;
+    height: 250px;
+    z-index: 3;
+}
+.app__banner .gallery-container .image-C {
+    right: 4rem;
+    bottom: 35rem;
+    width: 250px;
+    z-index: 3;
+}
+.app__banner .gallery-container .image-D {
+    bottom: 5rem;
+    right: 4rem;
     height: 250px;
 }
