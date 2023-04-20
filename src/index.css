@@ -24,6 +24,14 @@
     --gray__color     : #4d4d4d;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: var(--gray__color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--white__color);
+}
+
 * {
     padding: 0;
     margin: 0;

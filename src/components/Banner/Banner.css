@@ -1,0 +1,56 @@
+.app__banner {
+    background: var(--black__color);
+    border-radius: 16px 16px / 30px 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 400vh;
+    position: relative;
+}
+
+.app__banner .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.app__banner .text-content h1 {
+    color: var(--white__color);
+    font-size: var(--superlarge__font);
+    line-height: var(--superlarge__font);
+    font-family: var(--second__font);
+    font-weight: 400;
+    padding: 0 4rem;
+    word-spacing: -20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app__banner .text-content p {
+    color: var(--white__color);
+    font-size: var(--small__font);
+    text-align: center;
+}
+
+.app__banner .text-content a {
+    width: max-content;
+    padding: .75rem 2rem;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1.5px solid var(--orange__color);
+    color: var(--white__color);
+    background: var(--orange__color);
+    font-size: 24px;
+    transition: .3s;
+}
+.app__banner .text-content a:hover {
+    color: var(--orange__color);
+    background: transparent;
+}
