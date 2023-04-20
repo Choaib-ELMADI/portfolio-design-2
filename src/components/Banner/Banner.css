@@ -19,6 +19,7 @@
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .app__banner .text-content h1 {
@@ -49,8 +50,79 @@
     background: var(--orange__color);
     font-size: 24px;
     transition: .3s;
+    position: relative;
 }
 .app__banner .text-content a:hover {
     color: var(--orange__color);
     background: transparent;
+}
+.app__banner .text-content a::before {
+    position: absolute;
+    content: '';
+    left: .25rem;
+    bottom: .25rem;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid var(--white__color);
+    border-bottom: 3px solid var(--white__color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 3px;
+    filter: drop-shadow(0 0 10px var(--white__color));
+    opacity: .6;
+    transition: .3s;
+}
+.app__banner .text-content a:hover::before {
+    opacity: 0;
+}
+
+.app__banner .gallery-container .image {
+    position: absolute;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.app__banner .gallery-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__banner .gallery-container .image-a {
+    top: 6rem;
+}
+.app__banner .gallery-container .image-b {
+    height: 300px;
+    width: 140px;
+    right: 5rem;
+    top: 12rem;
+}
+.app__banner .gallery-container .image-c {
+    top: calc(100vh - 5rem);
+}
+.app__banner .gallery-container :is(.image-a, .image-c) {
+    width: 360px;
+    height: 240px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.app__banner .gallery-container .image-d {
+    left: 10rem;
+    top: calc(200vh + 6rem);
+    width: 210px;
+}
+.app__banner .gallery-container .image-e {
+    right: 15rem;
+    top: calc(200vh + 12rem);
+    width: 300px;
+}
+
+.app__banner .gallery-container .image-f {
+    bottom: 10rem;
+    right: 10rem;
+    height: 250px;
+}
+.app__banner .gallery-container .image-g {
+    bottom: 10rem;
+    left: 10rem;
+    height: 250px;
 }
