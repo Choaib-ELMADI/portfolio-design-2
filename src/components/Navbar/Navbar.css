@@ -15,6 +15,7 @@
     color: var(--white__color);
     font-size: var(--logo__size);
     font-family: var(--logo__font-1);
+    mix-blend-mode: difference;
 }
 .app__navbar a.logo span {
     color: var(--orange__color);

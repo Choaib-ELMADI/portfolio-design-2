@@ -10,9 +10,9 @@ const App = () => {
     <div className='app'>
       <Navbar />
       <Banner />
-      <div style={{ height: '100vh', background: 'blue' }} />
-      <div style={{ height: '100vh', background: 'orange' }} />
-      <div style={{ height: '100vh', background: 'greenyellow' }} />
+      <div style={{ height: '100vh', background: '#f5f5f5' }} />
+      <div style={{ height: '100vh', background: '#1d1d1d' }} />
+      <div style={{ height: '100vh', background: '#f5f5f5' }} />
     </div>
   );
 };
