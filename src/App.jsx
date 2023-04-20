@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import { Navbar, Banner, About } from './components/index';
+import { Navbar, Banner, About, Work } from './components/index';
 
 
 
@@ -11,7 +11,7 @@ const App = () => {
       <Navbar />
       <Banner />
       <About />
-      <div style={{ height: '100vh', background: '#1d1d1d' }} />
+      <Work />
       <div style={{ height: '100vh', background: '#f5f5f5' }} />
       <div style={{ height: '100vh', background: '#1d1d1d' }} />
     </div>
