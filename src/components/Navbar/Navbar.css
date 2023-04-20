@@ -15,6 +15,9 @@
     color: var(--white__color);
     font-size: var(--logo__size);
     font-family: var(--logo__font-1);
+    background: #333333;
+    padding: .25rem .75rem;
+    border-radius: 4px;
     mix-blend-mode: difference;
 }
 .app__navbar a.logo span {
