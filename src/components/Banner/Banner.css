@@ -88,6 +88,10 @@
 
 .app__banner .gallery-container .image-a {
     top: 6rem;
+    width: 360px;
+    height: 240px;
+    left: 20%;
+    transform: translateX(-50%);
 }
 .app__banner .gallery-container .image-b {
     height: 300px;
@@ -97,12 +101,11 @@
 }
 .app__banner .gallery-container .image-c {
     top: calc(100vh - 5rem);
-}
-.app__banner .gallery-container :is(.image-a, .image-c) {
-    width: 360px;
-    height: 240px;
+    width: 240px;
+    height: 160px;
     left: 20%;
     transform: translateX(-50%);
+    z-index: 3;
 }
 
 .app__banner .gallery-container .image-1 {
@@ -130,12 +133,6 @@
     bottom: 35rem;
     width: 250px;
 }
-.app__banner .gallery-container .image-B {
-    bottom: 5rem;
-    left: 4rem;
-    height: 250px;
-    z-index: 3;
-}
 .app__banner .gallery-container .image-C {
     right: 4rem;
     bottom: 35rem;
@@ -144,6 +141,6 @@
 }
 .app__banner .gallery-container .image-D {
     bottom: 5rem;
-    right: 4rem;
+    right: 14rem;
     height: 250px;
 }
