@@ -162,7 +162,7 @@
     opacity: .4;
 }
 .app__navbar .app__navbar-menu .menu-items .social li a {
-    color: var(--orange__color);
+    color: var(--green__color);
 }
 .app__navbar .app__navbar-menu .menu-items .social:hover > li {
     opacity: .4;
@@ -176,12 +176,12 @@
     padding: .5rem 1.5rem;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid var(--orange__color);
-    color: var(--orange__color);
+    border: 1px solid var(--green__color);
+    color: var(--green__color);
     background: transparent;
     transition: .3s;
 }
 .app__navbar .app__navbar-menu .menu-items .order:hover {
-    color: var(--white__color);
-    background: var(--orange__color);
+    color: var(--black__color);
+    background: var(--green__color);
 }
