@@ -4,3 +4,4 @@ export { default as About   } from './About/About';
 export { default as Work    } from './Work/Work';
 export { default as Help    } from './Help/Help';
 export { default as Pricing } from './Pricing/Pricing';
+export { default as Reviews } from './Reviews/Reviews';
