@@ -112,12 +112,22 @@
     background: var(--white__color);
 }
 
+.app__work .works-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .app__work .works-container .work {
     position: absolute;
     text-decoration: none;
 }
 .app__work .works-container .work-1 {
     left: 5rem;
+    top: 80vh;
 }
 .app__work .works-container .work-2 {
     top: calc(150vh + 300px);
