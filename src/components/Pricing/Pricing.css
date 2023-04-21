@@ -1,0 +1,188 @@
+.app__pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: var(--black__color);
+    padding: 4rem 0 3rem;
+    border-radius: 16px / 30px;
+}
+
+.app__pricing img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app__pricing > h1 {
+    color: var(--white__color);
+    font-size: var(--superlarge__font);
+    line-height: var(--superlarge__font);
+    font-family: var(--second__font);
+    font-weight: 400;
+    word-spacing: -20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.app__pricing > h1::after {
+    position: absolute;
+    content: '04';
+    top: -26px;
+    right: -16.25px;
+    font-size: var(--small__font);
+    color: var(--white__color);
+}
+
+.app__pricing .pricing-container {
+    z-index: 2;
+    width: 100%;
+    padding: 0 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.app__pricing .pricing-container .cards {
+    display: flex;
+    flex-direction: column;
+}
+.app__pricing .pricing-container .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: .75rem 1.5rem;
+    background: transparent;
+    border-radius: 12px;
+    transition: .3s;
+}
+.app__pricing .pricing-container .cards .card:hover {
+    background: var(--white__color);
+}
+
+.app__pricing .pricing-container .cards .card .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white__color);
+    text-transform: capitalize;
+    transition: .3s;
+}
+.app__pricing .pricing-container .cards .card .title h1 {
+    font-size: 22px;
+}
+.app__pricing .pricing-container .cards .card .title h1:nth-child(2) {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.app__pricing .pricing-container .cards .card p {
+    width: 100%;
+    max-width: 340px;
+    color: var(--white__color);
+    font-size: var(--small__font);
+    transition: .3s;
+}
+.app__pricing .pricing-container .cards .card:hover :is(p, .title) {
+    color: var(--black__color);
+}
+
+.app__pricing .pricing-container .cards .card a {
+    width: max-content;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1.5px solid var(--orange__color);
+    color: var(--white__color);
+    background: var(--orange__color);
+    font-size: 16px;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    transition-delay: .02s;
+    margin-left: auto;
+}
+.app__pricing .pricing-container .cards .card a::before {
+    position: absolute;
+    content: '';
+    left: .25rem;
+    bottom: .25rem;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid var(--white__color);
+    border-bottom: 3px solid var(--white__color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 3px;
+    filter: drop-shadow(0 0 10px var(--white__color));
+    opacity: .8;
+}
+.app__pricing .pricing-container .cards .card:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.app__pricing .consultation {
+    color: #aea6aa;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.app__pricing .consultation p {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: var(--small__font);
+}
+
+.app__pricing .consultation .social {
+    padding: .35rem .75rem .15rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.app__pricing .consultation .social::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background: var(--white__color);
+    transition: .3s;
+}
+.app__pricing .consultation:hover .social::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.app__pricing .consultation .social a {
+    z-index: 2;
+    scale: 0;
+    opacity: 0;
+    transition: .3s;
+    text-decoration: none;
+    color: var(--orange__color);
+}
+.app__pricing .consultation:hover .social a {
+    scale: 1.1;
+    opacity: 1;
+}
+.app__pricing .consultation .social a:nth-child(1) {
+    transition-delay: .1s;
+}
+.app__pricing .consultation .social a:nth-child(2) {
+    transition-delay: .2s;
+}
+.app__pricing .consultation .social a:nth-child(3) {
+    transition-delay: .3s;
+}
