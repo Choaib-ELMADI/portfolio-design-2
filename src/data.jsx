@@ -1,5 +1,4 @@
 import { AiFillInstagram, AiFillFacebook, AiFillGithub } from 'react-icons/ai';
-import images from './constants/images';
 
 
 
@@ -148,5 +147,32 @@ export const works = [
         back: 'https://images.pexels.com/photos/4709377/pexels-photo-4709377.jpeg?auto=compress&cs=tinysrgb&w=600',
         title: 'Pcb design and electronics',
         link: '#',
+    },
+];
+
+export const help = [
+    {
+        key: 'first',
+        src: 'https://static.tildacdn.info/tild6138-3737-4565-b039-613738643733/_1.png',
+    },
+    {
+        key: 'second',
+        src: 'https://static.tildacdn.info/tild6531-3165-4163-b262-306137333038/_2.png',
+    },
+    {
+        key: 'third',
+        src: 'https://static.tildacdn.info/tild6466-3263-4238-b237-386633313163/_3.png',
+    },
+    {
+        key: 'fourth',
+        src: 'https://static.tildacdn.info/tild6663-6163-4065-a636-343430646530/_4.png',
+    },
+    {
+        key: 'fifth',
+        src: 'https://static.tildacdn.info/tild6666-3437-4064-a232-623837303636/_5.png',
+    },
+    {
+        key: 'sixth',
+        src: 'https://static.tildacdn.info/tild3037-6462-4161-b239-333739656264/1e67d57c-4946-401c-b.png',
     },
 ];
