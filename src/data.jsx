@@ -98,3 +98,55 @@ export const pictures = [
         src: images.model3,
     },
 ];
+
+export const works = [
+    {
+        className: 'work-1',
+        key: 'project__1',
+        back: images.code3,
+        title: 'Web development, full-stack',
+        link: '#',
+    },
+    {
+        className: 'work-2',
+        key: 'project__2',
+        back: images.code2,
+        title: 'Web development, full-stack',
+        link: '#',
+    },
+    {
+        className: 'work-3',
+        key: 'project__3',
+        back: images.model4,
+        title: 'Solidworks, Blender, CAD CAM',
+        link: '#',
+    },
+    {
+        className: 'work-4',
+        key: 'project__4',
+        back: images.model3,
+        title: 'Solidworks, Blender, CAD CAM',
+        link: '#',
+    },
+    {
+        className: 'work-5',
+        key: 'project__5',
+        back: images.code1,
+        title: 'Web development, full-stack',
+        link: '#',
+    },
+    {
+        className: 'work-6',
+        key: 'project__6',
+        back: images.electro1,
+        title: 'Pcb design and electronics',
+        link: '#',
+    },
+    {
+        className: 'work-7',
+        key: 'project__7',
+        back: images.electro3,
+        title: 'Pcb design and electronics',
+        link: '#',
+    },
+];

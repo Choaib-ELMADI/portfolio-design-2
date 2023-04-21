@@ -1,7 +1,7 @@
 .app__work {
     background: var(--black__color);
     border-radius: 16px 16px / 30px 30px;
-    min-height: 300vh;
+    min-height: 850vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -16,8 +16,8 @@
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
 }
-
 .app__work .text-content h1 {
     color: var(--white__color);
     font-size: var(--superlarge__font);
@@ -29,11 +29,9 @@
     mix-blend-mode: difference;
     position: relative;
 }
-
 .app__work .text-content h1 span {
     color: var(--orange__color);
 }
-
 .app__work .text-content h1::after {
     position: absolute;
     content: '02';
@@ -42,4 +40,110 @@
     font-size: var(--small__font);
     color: var(--white__color);
     mix-blend-mode: difference;
+}
+
+.app__work .works-container .work .work-background {
+    width: 300px;
+    aspect-ratio: .7;
+    border-radius: 12px;
+    position: relative;
+}
+.app__work .works-container .work .work-background img { 
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.app__work .works-container .work .work-background label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    font-size: 18px;
+    background: var(--orange__color);
+    color: var(--white__color);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.app__work .works-container .work .work-background p {
+    position: absolute;
+    top: 3rem;
+    transform: translateX(calc(50% - 1rem));
+    width: 300px;
+    border-radius: 12px;
+    background: var(--white__color);
+    color: var(--black__color);
+    padding: 1rem .5rem;
+    font-size: var(--small__font);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.app__work .works-container .work .work-background label:hover + p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.app__work .works-container .work .work-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__work .works-container .work .work-info p {
+    color: var(--white__color);
+    font-size: var(--small__font);
+}
+.app__work .works-container .work .work-info p:nth-child(1) {
+    position: relative;
+    margin-left: 1rem;
+}
+.app__work .works-container .work .work-info p:nth-child(1)::before {
+    position: absolute;
+    content: '';
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--white__color);
+}
+
+.app__work .works-container .work {
+    position: absolute;
+    text-decoration: none;
+}
+.app__work .works-container .work-1 {
+    left: 5rem;
+}
+.app__work .works-container .work-2 {
+    top: calc(150vh + 300px);
+    right: 50%;
+    transform: translateX(50%);
+}
+.app__work .works-container .work-3 {
+    top: calc(280vh + 300px);
+    left: 5rem;
+}
+.app__work .works-container .work-4 {
+    top: calc(300vh + 300px);
+    right: 5rem;
+}
+.app__work .works-container .work-5 {
+    top: calc(450vh + 300px);
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 4;
+}
+.app__work .works-container .work-6 {
+    bottom: 130vh;
+    right: 10rem;
+    z-index: 4;
+}
+.app__work .works-container .work-7 {
+    bottom: 140vh;
+    left: 10rem;
 }
