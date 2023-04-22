@@ -235,3 +235,36 @@ export const reviews = [
         user: '@julie.julie'
     },
 ];
+
+export const orders = [
+    {
+        src: 'https://plus.unsplash.com/premium_photo-1676618539993-defb0cb1447d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8M2QlMjBtb2RlbGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        alt: 'Order Developmen__1',
+        border: '2px dotted var(--purple__color)',
+    },
+    {
+        src: 'https://plus.unsplash.com/premium_photo-1678564741870-d68a69925537?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        alt: 'Order Developmen__2',
+        border: '2px dotted var(--purple__color)',
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1597765206558-6f4e06954f2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fDNkJTIwbW9kZWxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        alt: 'Order Developmen__3',
+        border: '2px dotted var(--orange__color)',
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1642229407671-7ec2ba313386?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZWxlY3Ryb25pYyUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        alt: 'Order Developmen__4',
+        border: '2px dotted var(--orange__color)',
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        alt: 'Order Developmen__5',
+        border: '2px dotted var(--green__color)',
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1581094285214-779d97298443?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3Ryb25pYyUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        alt: 'Order Developmen__6',
+        border: '2px dotted var(--green__color)',
+    },
+];

@@ -1,0 +1,82 @@
+.app__order {
+    background: var(--black__color);
+    border-radius: 16px / 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: .75rem;
+    overflow: hidden;
+}
+
+.app__order h1 {
+    color: var(--white__color);
+    font-size: var(--superlarge__font);
+    line-height: var(--superlarge__font);
+    font-family: var(--second__font);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app__order p {
+    width: 100%;
+    max-width: 400px;
+    color: var(--white__color);
+    font-size: var(--small__font);
+    text-align: center;
+}
+
+.app__order a {
+    margin-top: .5rem;
+    margin-bottom: 5rem;
+    width: max-content;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1.5px solid var(--orange__color);
+    color: var(--white__color);
+    background: var(--orange__color);
+    font-size: 16px;
+    position: relative;
+}
+.app__order a::before {
+    position: absolute;
+    content: '';
+    left: .25rem;
+    bottom: .25rem;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid var(--white__color);
+    border-bottom: 3px solid var(--white__color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 3px;
+    filter: drop-shadow(0 0 10px var(--white__color));
+    opacity: .8;
+}
+
+.app__order .pics-container {
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+.app__order .pics-container .order {
+    width: 270px;
+    aspect-ratio: .7;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -6rem;
+    transition: bottom .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.app__order .pics-container .order img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__order .pics-container .order.hovered {
+    bottom: -2rem;
+}

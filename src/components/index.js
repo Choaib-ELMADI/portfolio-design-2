@@ -6,3 +6,4 @@ export { default as Help    } from './Help/Help';
 export { default as Pricing } from './Pricing/Pricing';
 export { default as Reviews } from './Reviews/Reviews';
 export { default as Footer  } from './Footer/Footer';
+export { default as Order   } from './Order/Order';

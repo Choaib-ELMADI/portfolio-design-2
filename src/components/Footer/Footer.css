@@ -5,6 +5,7 @@
     align-items: center;
     gap: 2rem;
     padding: 3rem 0;
+    z-index: 15;
 }
 
 .app__footer .create {
