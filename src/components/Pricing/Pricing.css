@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     background: var(--black__color);
-    padding: 4rem 0 3rem;
+    padding: 4rem 1rem 3rem;
     border-radius: 16px / 30px;
 }
 
@@ -39,7 +39,7 @@
 .app__pricing .pricing-container {
     z-index: 2;
     width: 100%;
-    padding: 0 4.5rem;
+    padding: 0 3.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -129,6 +129,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-top: 1.5rem;
 }
 .app__pricing .consultation p {
     width: 100%;
@@ -185,4 +186,45 @@
 }
 .app__pricing .consultation .social a:nth-child(3) {
     transition-delay: .3s;
+}
+
+
+
+@media screen and (width <= 1060px) {
+    .app__pricing h1 {
+        font-size: calc(var(--superlarge__font) - 20px);
+        line-height: calc(var(--superlarge__font) - 20px);
+    }
+}
+@media screen and (width <= 900px) {
+    .app__pricing h1 {
+        font-size: calc(var(--superlarge__font) - 32px);
+        line-height: calc(var(--superlarge__font) - 32px);
+    }
+
+    .app__pricing .pricing-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+}
+@media screen and (width <= 707px) {
+    .app__pricing h1 {
+        font-size: calc(var(--superlarge__font) - 42px);
+        line-height: calc(var(--superlarge__font) - 42px);
+    }
+}
+@media screen and (width <= 602px) {
+    .app__pricing h1 {
+        font-size: calc(var(--superlarge__font) - 52px);
+        line-height: calc(var(--superlarge__font) - 52px);
+        word-spacing: 8px;
+    }
+}
+@media screen and (width <= 500px) {
+    .app__pricing > h1 {
+        font-size: 40px;
+        line-height: 40px;
+        word-spacing: -8px;
+    }
 }

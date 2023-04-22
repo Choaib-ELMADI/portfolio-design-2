@@ -8,15 +8,15 @@ import { Navbar, Banner, About, Work, Help, Pricing, Reviews, Footer, Order } fr
 const App = () => {
   return (
     <div className='app'>
-      <Navbar />
-      <Banner />
-      <About />
-      <Work />
-      <Help />
-      {/* <Pricing /> */}
+      {/* <Navbar /> */}
+      {/* <Banner /> */}
+      {/* <About /> */}
+      {/* <Work /> */}
+      {/* <Help /> */}
+      <Pricing />
       {/* <Reviews /> */}
       {/* <Order /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
