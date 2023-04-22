@@ -1,5 +1,5 @@
 .app__help {
-    padding: 8rem 0 5rem;
+    padding: 8rem 1rem 5rem;
 }
 
 .app__help .header {
@@ -65,16 +65,52 @@
     object-fit: cover;
 }
 
+
+
+@media screen and (width <= 1060px) {
+    .app__help .header h1,
+    .app__help .header h1 span {
+        font-size: calc(var(--superlarge__font) - 20px);
+        line-height: calc(var(--superlarge__font) - 20px);
+    }
+}
 @media screen and (width <= 900px) {
+    .app__help .header h1,
+    .app__help .header h1 span {
+        font-size: calc(var(--superlarge__font) - 32px);
+        line-height: calc(var(--superlarge__font) - 32px);
+    }
+
     .app__help .gallery {
         padding: 0 4rem;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media screen and (width <= 707px) {
+    .app__help .header h1,
+    .app__help .header h1 span {
+        font-size: calc(var(--superlarge__font) - 42px);
+        line-height: calc(var(--superlarge__font) - 42px);
+    }
+}
+@media screen and (width <= 602px) {
+    .app__help .header h1,
+    .app__help .header h1 span {
+        font-size: calc(var(--superlarge__font) - 52px);
+        line-height: calc(var(--superlarge__font) - 52px);
+        word-spacing: 8px;
+    }
+}
 @media screen and (width <= 500px) {
+    .app__help .header h1,
+    .app__help .header h1 span {
+        font-size: 40px;
+        line-height: 40px;
+        word-spacing: -8px;
+    }
+
     .app__help .gallery {
-        padding: 0 21rem;
+        padding: 0 1rem;
         grid-template-columns: repeat(1, 1fr);
     }
 }
