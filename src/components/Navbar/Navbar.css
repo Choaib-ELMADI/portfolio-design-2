@@ -1,8 +1,9 @@
 .app__navbar {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
     padding: 1.5rem 4.5rem;
     display: flex;
     justify-content: space-between;
@@ -184,4 +185,22 @@
 .app__navbar .app__navbar-menu .menu-items .order:hover {
     color: var(--black__color);
     background: var(--green__color);
+}
+
+
+
+@media screen and (width <= 900px) {
+    .app__navbar {
+        padding: 1rem 3rem;
+    }
+}
+@media screen and (width <= 500px) {
+    .app__navbar {
+        padding: .5rem 2rem;
+    }
+}
+@media screen and (width <= 360px) {
+    .app__navbar {
+        padding: .35rem 1rem;
+    }
 }
