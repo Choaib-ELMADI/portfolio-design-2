@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 400vh;
+    min-height: 3000px;
     position: relative;
 }
 
@@ -27,9 +27,9 @@
     font-size: var(--superlarge__font);
     line-height: var(--superlarge__font);
     font-family: var(--second__font);
-    font-weight: 400;
-    word-spacing: -20px;
     text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 15px;
     text-align: center;
 }
 
@@ -77,6 +77,7 @@
 }
 
 .app__banner .gallery-container .image {
+    background: red;
     position: absolute;
     border-radius: 12px;
     overflow: hidden;
@@ -87,72 +88,66 @@
     object-fit: cover;
 }
 
-/** AN ISSUE HERE TO CHECK */
 .app__banner .gallery-container .image-a {
+    left: 5%;
     top: 6rem;
-    width: clamp(120px, 25%, 360px);
-    height: 240px;
-    left: 20%;
-    transform: translateX(-50%);
+    width: clamp(200px, 25%, 400px);
+    aspect-ratio: 1.4;
 }
-/** AN ISSUE HERE TO CHECK */
 .app__banner .gallery-container .image-b {
-    height: 300px;
+    right: 5%;
+    top: 18rem;
     width: clamp(90px, 25%, 140px);
-    right: 15%;
-    transform: translateX(50%);
-    top: 12rem;
+    aspect-ratio: .4;
 }
-/** AN ISSUE TO CHECK HERE  */
 .app__banner .gallery-container .image-c {
-    top: calc(100vh - 5rem);
+    left: 5%;
+    top: 30rem;
     width: clamp(100px, 25%, 240px);
-    height: 160px;
-    left: 20%;
-    transform: translateX(-50%);
+    aspect-ratio: 1;
     z-index: 3;
 }
 
 .app__banner .gallery-container .image-1 {
-    left: 10%;
-    top: calc(150vh + 3rem);
-    height: 200px;
-    width: clamp(100px, 30%, 150px);
+    left: 5%;
+    top: 56rem;
+    width: clamp(100px, 30%, 230px);
+    aspect-ratio: .8;
 }
 .app__banner .gallery-container .image-2 {
     right: 10%;
-    top: calc(200vh + 6.5rem);
-    width: 140px;
-    height: 220px;
+    top: 100rem;
+    width: clamp(150px, 30%, 200px);
+    aspect-ratio: 1;
 }
 .app__banner .gallery-container .image-3 {
     right: 50%;
-    top: 50%;
-    transform: translate(50%, -50%);
-    max-width: 300px;
+    transform: translateX(50%);
+    top: 80rem;
     width: 100%;
+    max-width: 300px;
+    aspect-ratio: 2;
     z-index: 3;
 }
 
 .app__banner .gallery-container .image-A {
-    left: 15%;
-    bottom: 35rem;
+    left: 5%;
+    top: 120rem;
     width: clamp(120px, 20%, 260px);
     height: 200px;
-    transform: translateX(-50%);
 }
 .app__banner .gallery-container .image-C {
     right: 10%;
     bottom: 30rem;
-    height: 250px;
     width: clamp(130px, 20%, 300px);
+    aspect-ratio: .9;
     z-index: 3;
 }
 .app__banner .gallery-container .image-D {
+    left: 5%;
     bottom: 5rem;
-    right: 20%;
-    transform: translateX(50%);
-    height: 250px;
+    width: clamp(210px, 30%, 350px);
+    aspect-ratio: 1.5;
 }
 
 
@@ -169,22 +164,30 @@
         line-height: calc(var(--superlarge__font) - 32px);
     }
 }
-@media screen and (width <= 675px) {
+@media screen and (width <= 707px) {
     .app__banner .text-content h1 {
         font-size: calc(var(--superlarge__font) - 42px);
         line-height: calc(var(--superlarge__font) - 42px);
     }
 }
-@media screen and (width <= 575px) {
+@media screen and (width <= 602px) {
     .app__banner .text-content h1 {
         font-size: calc(var(--superlarge__font) - 52px);
         line-height: calc(var(--superlarge__font) - 52px);
-        word-spacing: -12px;
+        word-spacing: 8px;
     }
 }
 @media screen and (width <= 500px) {
     .app__banner .text-content h1 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 36px;
+        line-height: 36px;
+        word-spacing: -8px;
+    }
+
+    .app__banner .gallery-container .image-b {
+        top: 27rem;
+    }
+    .app__banner .gallery-container .image-c {
+        top: 35rem;
     }
 }
