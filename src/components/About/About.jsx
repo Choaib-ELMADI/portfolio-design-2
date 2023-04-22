@@ -52,9 +52,9 @@ const About = () => {
                 <div 
                     className='card'
                     style={{ 
-                        transform: `translate( 
-                            calc(-${ position.x / 15 }px - 40%), 
-                            calc(-${ position.y / 10 }px - 100%) 
+                        transform: `translate(
+                            -${ position.x / 15 }px,
+                            -${ position.y / 10 }px
                         )`,
                         transition: `${ transition }s`
                     }}

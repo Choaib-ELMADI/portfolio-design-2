@@ -1,61 +1,33 @@
 .app__about {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 14rem 4.5rem 3rem 4.5rem;
-}
-
-.app__about :is(.right, .left) {
-    height: 540px;
-    flex: .3;
-    max-width: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 1.5rem;
-}
-.app__about :is(.right, .left) p {
-    color: var(--black__color);
-    font-size: var(--small__font);
-}
-
-.app__about .right {
-    align-items: flex-end;
-}
-.app__about .right p {
-    text-align: right;
-}
-.app__about .right div {
-    width: 20px;
-    height: 20px;
-    background: #59ee16;
-    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 24% auto 24%;
+    padding: 5rem 4.5rem;
+    background: var(--white__color);
 }
 
 .app__about .card-wrapper {
-    flex: .6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
-.app__about .card {
-    margin: 0 auto;
-    height: 650px;
+.app__about .card-wrapper .card {
     width: 400px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    border-radius: 16px;
+    aspect-ratio: .6;
+    border-radius: 12px;
+    position: relative;
     overflow: hidden;
 }
-.app__about .card img {
+.app__about .card-wrapper .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.app__about .card h2 {
+.app__about .card-wrapper  .card h2 {
     width: max-content;
     position: absolute;
-    left: 50%;
     bottom: 2rem;
+    left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase;
     background: var(--white__color);
@@ -65,19 +37,17 @@
     padding: .25rem .75rem;
     border-radius: 4px;
 }
-
 .app__about .card-wrapper h1 {
     width: max-content;
     position: absolute;
-    top: -36rem;
     left: 50%;
     transform: translateX(-50%);
+    top: 3rem;
     color: var(--white__color);
     font-size: var(--superlarge__font);
     font-family: var(--second__font);
     font-weight: 400;
     text-transform: uppercase;
-    word-spacing: -20px;
     mix-blend-mode: difference;
 }
 .app__about .card-wrapper h1::after {
@@ -88,4 +58,74 @@
     font-size: var(--small__font);
     color: var(--white__color);
     mix-blend-mode: difference;
+}
+
+.app__about :is(.left, .right) {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.app__about :is(.left, .right) p {
+    color: var(--black__color);
+    font-size: var(--small__font);
+}
+.app__about .right {
+    align-items: flex-end;
+    text-align: end;
+}
+.app__about .right div {
+    width: 20px;
+    height: 20px;
+    background: #59ee16;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (width <= 965px) {
+    .app__about {
+        padding: 5rem 3rem;
+    }
+}
+@media screen and (width <= 800px) {
+    .app__about .card-wrapper .card {
+        width: 350px;
+    }
+
+    .app__about :is(.left, .right) {
+        padding-top: 0;
+    }
+}
+@media screen and (width <= 700px) {
+    .app__about {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .app__about .card-wrapper h1 {
+        font-size: 85px;
+    }
+
+    .app__about .left {
+        gap: 2rem;
+    }
+    .app__about .right {
+        flex-direction: row;
+        text-align: start;
+    }
+}
+@media screen and (width <= 500px) {
+    .app__about {
+        padding: 5rem 2rem;
+    }
+
+    .app__about .card-wrapper .card {
+        width: 100%;
+    }
+
+    .app__about .card-wrapper h1 {
+        font-size: 55px;
+    }
 }
