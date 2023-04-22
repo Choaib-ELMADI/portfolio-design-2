@@ -1,0 +1,78 @@
+.app__footer {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.app__footer .create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: #999999;
+}
+.app__footer .create:hover {
+    color: var(--white);
+}
+
+.app__footer .create .logo {
+    font-size: calc(var(--logo__size) - 5px);
+    font-family: var(--logo__font-1);
+    position: relative;
+}
+.app__footer .create .logo span {
+    color: var(--orange__color);
+}
+.app__footer .create .logo::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--gray__color);
+    border-radius: 50%;
+}
+.app__footer .create:hover .logo::after {
+    border-color: var(--white);
+}
+
+.app__footer .create p {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    font-size: calc(var(--small__font) + 0.5px);
+}
+
+.app__footer .create a {
+    background: #999999;
+    color: var(--black);
+    text-decoration: none;
+    padding: .65rem 1.25rem;
+    border-radius: 30px;
+    font-size: calc(var(--small__font) + 0.5px);
+    font-weight: 500;
+}
+.app__footer .create:hover a {
+    background: var(--white);
+}
+
+.app__footer .links {
+    display: flex;
+    gap: 1.5rem;
+}
+.app__footer .links a {
+    color: #716f6f;
+    text-decoration: none;
+    font-size: var(--small__font);
+    font-weight: bolder;
+    letter-spacing: -.75px;
+    word-spacing: 2px;
+}
+.app__footer .links a:hover {
+    color: var(--white);
+}

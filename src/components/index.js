@@ -5,3 +5,4 @@ export { default as Work    } from './Work/Work';
 export { default as Help    } from './Help/Help';
 export { default as Pricing } from './Pricing/Pricing';
 export { default as Reviews } from './Reviews/Reviews';
+export { default as Footer  } from './Footer/Footer';
