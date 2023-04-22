@@ -43,7 +43,8 @@
 }
 
 .app__work .works-container .work .work-background {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     aspect-ratio: .7;
     border-radius: 12px;
     position: relative;
@@ -71,8 +72,9 @@
 .app__work .works-container .work .work-background p {
     position: absolute;
     top: 3rem;
-    transform: translateX(calc(50% - 1rem));
-    width: 300px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
     border-radius: 12px;
     background: var(--white__color);
     color: var(--black__color);
@@ -156,4 +158,66 @@
 .app__work .works-container .work-7 {
     bottom: 140vh;
     left: 10rem;
+}
+
+
+
+@media screen and (width <= 1060px) {
+    .app__work {
+        padding: 2rem 0;
+        min-height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .app__work .text-content {
+        position: static;
+        transform: translateY(0);
+    }
+    .app__work .text-content h1 {
+            font-size: calc(var(--superlarge__font) - 20px);
+            line-height: calc(var(--superlarge__font) - 20px);
+    }
+
+    .app__work .works-container {
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem 2rem;
+        padding: 0 3rem;
+    }
+    .app__work .works-container .work {
+        position: static;
+        width: max-content;
+        transform: translate(0);
+    }
+}
+@media screen and (width <= 900px) {
+    .app__work .text-content h1 {
+        font-size: calc(var(--superlarge__font) - 32px);
+        line-height: calc(var(--superlarge__font) - 32px);
+    }
+}
+@media screen and (width <= 707px) {
+    .app__work .text-content h1 {
+        font-size: calc(var(--superlarge__font) - 42px);
+        line-height: calc(var(--superlarge__font) - 42px);
+    }
+}
+@media screen and (width <= 602px) {
+    .app__work .text-content h1 {
+        font-size: calc(var(--superlarge__font) - 52px);
+        line-height: calc(var(--superlarge__font) - 52px);
+        word-spacing: 8px;
+    }
+}
+@media screen and (width <= 500px) {
+    .app__work .text-content h1 {
+        font-size: 40px;
+        line-height: 40px;
+        word-spacing: -8px;
+    }
 }
