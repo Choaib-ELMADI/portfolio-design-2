@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
+import { FiChevronsLeft, FiChevronsRight } from 'react-icons/fi';
 
 import './Reviews.css';
-import images from '../../constants/images';
+import { reviews } from '../../data';
 
 
 
@@ -25,36 +26,45 @@ const Reviews = () => {
                 and professional skills can best be judged by the reviews of my clients.
             </p>
             <div className='reviews-wrapper' ref={ scrollRef }>
-                <div className='review'>
-                    <div className='testimonial'>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Voluptates exercitationem 
-                            illum temporibus cupiditate, obcaecati aliquam
-                        </p>
-                    </div>
-                    <div className='client'>
-                        <div className='profile'>
-                            <img src={ images.profile } alt="Client Profile" />
+                {
+                    reviews.map((r, i) => (
+                        <div 
+                            className='review' 
+                            key={ `review-${ i+1 }` }
+                            style={{ 
+                                transform: i%2 ? 'rotateZ(-1.5deg)' : 'rotateZ(1.5deg)',
+                                zIndex: i+1
+                            }}
+                        >
+                            <div className="testimonial">
+                                <p>{ r.para1 }</p>
+                                <p>{ r.para2 }</p>
+                            </div>
+                            <div className='client'>
+                                <div className='profile'>
+                                    <img src={ r.src } alt="Client Profile" draggable={ false } />
+                                </div>
+                                <div className="name">
+                                    <h2>{ r.name }</h2>
+                                    <p>{ r.user }</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='name'>
-                            <h2>Choaib ELMADI</h2>
-                            <p>@choaib_elmadi.94</p>
-                        </div>
-                    </div>
-                </div>
+                    ))
+                }
             </div>
             <button 
                 className='left'
                 onClick={ () => scroll('left') }
-            >left</button>
+            >
+                <FiChevronsLeft size={ 25 } />
+            </button>
             <button
                 className='right'
                 onClick={ () => scroll('right') }
-            >right</button>
+            >
+                <FiChevronsRight size={ 25 } />
+            </button>
         </div>
     );
 };

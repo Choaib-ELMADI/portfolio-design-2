@@ -176,3 +176,62 @@ export const help = [
         src: 'https://static.tildacdn.info/tild3037-6462-4161-b239-333739656264/1e67d57c-4946-401c-b.png',
     },
 ];
+
+export const reviews = [
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://media.licdn.com/dms/image/D4E03AQHCuGNl1WraYQ/profile-displayphoto-shrink_800_800/0/1665245861808?e=2147483647&v=beta&t=9Fz6mbdBaM3-soKOipLyZjvpGvATkgiO9uiMf4-8RQ0',
+        name: 'Choaib ELMADI',
+        user: '@choaib_elmadi.94'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://www.german.pitt.edu/sites/default/files/styles/person_small/public/person-images/20180927_AO_504_German_Portrait_0123_01.jpg?itok=_nZ0KXlh',
+        name: 'Jack PERLE',
+        user: '@perlejack__'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3763188.jpg&fm=jpg',
+        name: 'Lina CARLOS',
+        user: '@carloscarlos_01'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://www.morganstanley.com/content/dam/msdotcom/people/tiles/isaiah-dwuma.jpg.img.380.medium.jpg/1594668408164.jpg',
+        name: 'Morgan STANLEY',
+        user: '@morgan_stanley_'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://image.shutterstock.com/mosaic_250/2780032/1854697390/stock-photo-head-shot-young-attractive-businessman-in-glasses-standing-in-modern-office-pose-for-camera-1854697390.jpg',
+        name: 'Karl KHAN',
+        user: '@khan.karlo.13'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://www.morganstanley.com/content/dam/msdotcom/people/tiles/miriam-faghihi.jpg.img.490.medium.jpg/1595876429967.jpg',
+        name: 'Sophie MACRON',
+        user: '@sophie_macron'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://www.phdmedia.com/hungary/wp-content/uploads/sites/61/2015/05/temp-people-profile.jpg',
+        name: 'Irrik LEBURE',
+        user: '@irrik__15.le'
+    },
+    {
+        para1: 'Lorem ipsum dolor sit amet consectetur.',
+        para2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus esse dignissimos deleniti cum deserunt molestias praesentium neque repellendus ut.',
+        src: 'https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg',
+        name: 'Tephany JULIE',
+        user: '@julie.julie'
+    },
+];
