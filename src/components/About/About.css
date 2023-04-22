@@ -123,6 +123,7 @@
 
     .app__about .card-wrapper .card {
         width: 100%;
+        transform: translate(0, 0) !important;
     }
 
     .app__about .card-wrapper h1 {
