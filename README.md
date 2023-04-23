@@ -1,7 +1,7 @@
 <h1><a href='https://elmadi-p-2.netlify.app' target='_blank'>VIEW LIVE</a></h1>
 <h1>Large Devices :</h1>
 
-<img src="demos/desktop__1.png" width="500" /> <img src="demos/desktop__2.png" width="500" /> <img src="demos/desktop__3.png" width="500" /> <img src="demos/desktop__4.png" width="500" /> <img src="demos/desktop__5.png" width="500" />
+<img src="demos/desktop__1.png" width="500" /> <img src="demos/desktop__2.png" width="500" /> <img src="demos/desktop__3.png" width="500" /> <img src="demos/desktop__4.png" width="500" /> <img src="demos/desktop__5.png" width="500" /> <img src="demos/desktop__6.png" width="500" /> <img src="demos/desktop__7.png" width="500" /> <img src="demos/desktop__8.png" width="500" /> <img src="demos/desktop__9.png" width="500" />
 
 <h1>Small Devices :</h1>
 
