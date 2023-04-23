@@ -37,6 +37,7 @@
     color: var(--white__color);
     font-size: var(--small__font);
     text-align: center;
+    width: 100%;
 }
 
 .app__banner .text-content a {

@@ -50,6 +50,7 @@
 }
 
 .app__footer .create a {
+    width: max-content;
     background: #999999;
     color: var(--black);
     text-decoration: none;

@@ -191,13 +191,13 @@
 
 
 @media screen and (width <= 1060px) {
-    .app__pricing h1 {
+    .app__pricing > h1 {
         font-size: calc(var(--superlarge__font) - 20px);
         line-height: calc(var(--superlarge__font) - 20px);
     }
 }
 @media screen and (width <= 900px) {
-    .app__pricing h1 {
+    .app__pricing > h1 {
         font-size: calc(var(--superlarge__font) - 32px);
         line-height: calc(var(--superlarge__font) - 32px);
     }
@@ -209,13 +209,13 @@
     }
 }
 @media screen and (width <= 707px) {
-    .app__pricing h1 {
+    .app__pricing > h1 {
         font-size: calc(var(--superlarge__font) - 42px);
         line-height: calc(var(--superlarge__font) - 42px);
     }
 }
 @media screen and (width <= 602px) {
-    .app__pricing h1 {
+    .app__pricing > h1 {
         font-size: calc(var(--superlarge__font) - 52px);
         line-height: calc(var(--superlarge__font) - 52px);
         word-spacing: 8px;
@@ -223,8 +223,8 @@
 }
 @media screen and (width <= 500px) {
     .app__pricing > h1 {
-        font-size: 40px;
-        line-height: 40px;
-        word-spacing: -8px;
+        font-size: 36px;
+        line-height: 36px;
+        word-spacing: 8px;
     }
 }
