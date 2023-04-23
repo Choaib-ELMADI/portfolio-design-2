@@ -16,8 +16,8 @@ export const listItems = [
         title: 'Pricing',
     },
     {
-        id: 'contact',
-        title: 'Contact',
+        id: 'help',
+        title: 'Help',
     },
 ];
 

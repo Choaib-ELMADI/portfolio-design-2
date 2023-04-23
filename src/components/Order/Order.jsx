@@ -16,7 +16,7 @@ const Order = () => {
                 your business and set you apart from the competition.
             </p>
             <a 
-                href="#"
+                href="tel:0614001973"
                 onPointerEnter={ () => setHovered(true) }
                 onPointerLeave={ () => setHovered(false) }
             >Order Now</a>

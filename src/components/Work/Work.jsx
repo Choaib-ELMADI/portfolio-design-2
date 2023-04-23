@@ -7,7 +7,7 @@ import { works } from '../../data';
 
 const Work = () => {
   return (
-    <div className='app__work'>
+    <div className='app__work' id='work'>
         <div className='text-content'>
             <h1>Selected <br /><span>Works</span></h1>
         </div>

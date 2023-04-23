@@ -35,7 +35,14 @@ const Navbar = () => {
                     <ul className="list">
                         {
                             listItems.map(item => (
-                                <li key={ item.id }><a href={ `#${ item.id }` }>{ item.title }</a></li>
+                                <li key={ item.id }>
+                                    <a 
+                                        href={ `#${ item.id }` }
+                                        onClick={ () => setMenuOpen(false) }
+                                    >
+                                        { item.title }
+                                    </a>
+                                </li>
                             ))
                         }
                     </ul>
@@ -57,7 +64,7 @@ const Navbar = () => {
                             ))
                         }
                     </ul>
-                    <a href="#" className='order'>Order Now</a>
+                    <a href="tel:0614001973" className='order'>Order Now</a>
                 </div>
             </div>
         </nav>

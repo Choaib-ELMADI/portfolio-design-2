@@ -8,13 +8,13 @@ import { pictures } from '../../data';
 
 const Banner = () => {
   return (
-    <div className='app__banner'>
+    <div className='app__banner' id='about'>
       <div className='text-content'>
           <h1>I create products <br />that make profit</h1>
           <p>
               I will make a product that will bring<br /> customers and make you stand out in the market
           </p>
-          <a href="#">Order Now</a>
+          <a href="tel:0614001973">Order Now</a>
       </div>
 
       <div className="gallery-container" id="smooth-content">

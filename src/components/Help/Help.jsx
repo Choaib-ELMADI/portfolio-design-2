@@ -7,7 +7,7 @@ import { help } from '../../data';
 
 const Help = () => {
   return (
-    <div className='app__help'>
+    <div className='app__help' id='help'>
         <div className='header'>
           <h1>how can i <span>help</span><br /> your business</h1>
           <p>

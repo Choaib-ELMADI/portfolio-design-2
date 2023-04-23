@@ -8,7 +8,7 @@ import { socials } from '../../data';
 
 const Pricing = () => {
   return (
-    <div className='app__pricing'>
+    <div className='app__pricing' id='pricing'>
         <img src={ imageSource } alt="pricing" />
         <h1>Project cost</h1>
         <div className='pricing-container'>
@@ -22,7 +22,7 @@ const Pricing = () => {
                         A one-page website that introduces a product.
                         It can be a physical object, an IT service or a course.
                     </p>
-                    <a href="#" className='order'>Order Now</a>
+                    <a href="tel:0614001973" className='order'>Order Now</a>
                 </div>
                 <div className="card">
                     <div className='title'>
@@ -34,7 +34,7 @@ const Pricing = () => {
                         It such project, there are several scenarios for each user 
                         to find his own.
                     </p>
-                    <a href="#" className='order'>Order Now</a>
+                    <a href="tel:0614001973" className='order'>Order Now</a>
                 </div>
             </div>
             <div className="cards right">
@@ -48,7 +48,7 @@ const Pricing = () => {
                         goods on the Internet with the possibility of 
                         paying online.
                     </p>
-                    <a href="#" className='order'>Order Now</a>
+                    <a href="tel:0614001973" className='order'>Order Now</a>
                 </div>
                 <div className="card">
                     <div className='title'>
@@ -59,7 +59,7 @@ const Pricing = () => {
                         We completely redesign your product. Creating a new structure, 
                         positioning and style of your brand.
                     </p>
-                    <a href="#" className='order'>Order Now</a>
+                    <a href="tel:0614001973" className='order'>Order Now</a>
                 </div>
             </div>
         </div>
