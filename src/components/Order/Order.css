@@ -93,12 +93,6 @@
         font-size: calc(var(--superlarge__font) - 32px);
         line-height: calc(var(--superlarge__font) - 32px);
     }
-
-    .app__order > .pricing-container {
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 0;
-    }
 }
 @media screen and (width <= 707px) {
     .app__order > h1 {
